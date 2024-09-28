@@ -37,18 +37,19 @@ h1 {
   gap: 30px;
   justify-content: center;
   margin-top: 20px;
+
   /* "a" is for #github-btn and #resume-btn */
-}
-.home-btns-container a {
-  padding: 20px 40px;
-  border: 2px solid;
-  text-align: center;
-  text-decoration: none;
-  font-size: 24px;
-  background-color: #fff;
-  color: #000;
-  margin: 10px;
-  transition: background-color 0.3 ease;
+  a {
+    padding: 20px 40px;
+    border: 2px solid;
+    text-align: center;
+    text-decoration: none;
+    font-size: 24px;
+    background-color: #fff;
+    color: #000;
+    margin: 10px;
+    transition: background-color 0.3 ease;
+  }
 }
 
 /* Navigation Bar */
@@ -66,48 +67,56 @@ h1 {
   z-index: 1000;
   height: 120px;
   box-sizing: border-box;
+
   /* Portrait and Name Container */
+  .nav-portrait-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    a {
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    a:hover {
+      opacity: 0.8;
+    }
+
+    .nav-portrait {
+      width: 85px;
+      height: auto;
+      border-radius: 50px;
+    }
+  }
+
+  .nav-name-text {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+  }
+
   /* Navigation Links */
-}
-.nav-container .nav-portrait-container {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-}
-.nav-container .nav-portrait-container a {
-  text-decoration: none;
-  display: inline-block;
-}
-.nav-container .nav-portrait-container a:hover {
-  opacity: 0.8;
-}
-.nav-container .nav-portrait-container .nav-portrait {
-  width: 85px;
-  height: auto;
-  border-radius: 50px;
-}
-.nav-container .nav-name-text {
-  font-size: 24px;
-  font-weight: bold;
-  color: #000;
-}
-.nav-container .nav-links-container {
-  display: flex;
-  gap: 25px;
-  margin-right: 20px;
-}
-.nav-container .nav-links-container a {
-  color: #000;
-  text-decoration: none;
-  font-size: 18px;
-  padding: 10px;
-  position: relative;
-  z-index: 0;
-  cursor: pointer;
-}
-.nav-container .nav-links-container a:hover {
-  background-color: #e0f7fa;
-  border-radius: 50px;
+  .nav-links-container {
+    display: flex;
+    gap: 25px;
+    margin-right: 20px;
+
+    a {
+      color: #000;
+      text-decoration: none;
+      font-size: 18px;
+      padding: 10px;
+      position: relative;
+      z-index: 0;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #e0f7fa;
+        border-radius: 50px;
+      }
+    }
+  }
 }
 
 .contact-container {
@@ -118,18 +127,19 @@ h1 {
 .form-and-image {
   display: flex;
   justify-content: space-between;
+  // align-items: flex-start;
   align-items: stretch;
   gap: 20px;
 }
 
 .form-container {
   flex: 1;
-  background-color: #fff;
-  padding: 25px;
+  background-color: #fff; // White background for the form
+  padding: 25px; // Add padding inside the form
   padding-top: 0px;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ccc; // A subtle border around the form
+  border-radius: 10px; // Rounded corners for a softer look
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // Slight shadow for depth
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -156,8 +166,8 @@ form label {
   width: 100%;
 }
 
-input[type=text],
-input[type=email],
+input[type="text"],
+input[type="email"],
 textarea {
   width: 100%;
   padding: 10px;
@@ -171,7 +181,7 @@ textarea {
   height: 100px;
 }
 
-input[type=submit] {
+input[type="submit"] {
   width: 100px;
   padding: 10px;
   border: none;
@@ -182,7 +192,7 @@ input[type=submit] {
   align-items: flex-start;
 }
 
-input[type=submit]:hover {
+input[type="submit"]:hover {
   background-color: #45a049;
 }
 
@@ -192,8 +202,8 @@ input[type=submit]:hover {
   max-width: 48%;
   display: flex;
   justify-content: center;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px; // Rounded corners to match the form
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // Same shadow effect as form
 }
 
 .contact-portrait {
@@ -203,28 +213,28 @@ input[type=submit]:hover {
 }
 
 footer {
-  background-color: #fff;
+  background-color: #fff; // You can change this to a complementary color
   padding: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+  flex-direction: column; // Align items vertically
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1); // Add a subtle shadow to lift the footer
 }
 
 .social-media-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 20px; // Space between the icons
 }
 
 footer h3 {
   font-size: 24px;
   font-weight: bold;
   margin-bottom: 10px;
-  text-align: center;
-  color: #333;
+  text-align: center; // Center the title above the social media icons
+  color: #333; // Complementary text color, you can adjust this
 }
 
 footer a {
@@ -233,17 +243,18 @@ footer a {
 }
 
 footer a:hover {
-  transform: scale(1.1);
+  transform: scale(1.1); // Slight scaling effect on hover
 }
 
 footer img {
   width: 40px;
   height: 40px;
-  border-radius: 5px;
+  border-radius: 5px; // Soft corners for the icons
 }
 
 .social-media-container {
   min-width: 100%;
+  // background-color: white;
   justify-content: center;
   align-items: center;
 }
@@ -274,108 +285,136 @@ footer img {
 }
 
 /* Base styles for larger screens */
+
 @media only screen and (max-width: 1200px) {
+
   /* Adjustments for tablet-sized screens */
   body {
     font-size: 18px;
   }
+
   h1 {
     font-size: 36px;
   }
+
   .nav-portrait {
     width: 65px;
   }
+
   .nav-name-text {
     font-size: 20px;
   }
+
   .nav-links-container a {
     font-size: 16px;
   }
+
   .home-btns-container a {
     padding: 15px 30px;
     font-size: 20px;
   }
 }
+
 @media only screen and (max-width: 768px) {
+
   /* Adjustments for smaller tablet screens */
   body {
     font-size: 16px;
   }
+
   .nav-container {
     flex-direction: column;
     padding: 10px;
     height: auto;
   }
+
   .nav-links-container {
     flex-direction: column;
     margin-right: 0;
   }
+
   .nav-portrait {
     width: 55px;
   }
+
   .home-btns-container {
     flex-direction: column;
     gap: 15px;
   }
+
   .home-btns-container a {
     width: 100%;
     padding: 10px 20px;
   }
+
   .form-and-image {
     flex-direction: column;
     align-items: center;
   }
+
   .contact-portrait-container {
     max-width: 100%;
     margin-top: 20px;
   }
 }
+
 @media only screen and (max-width: 480px) {
+
   /* Adjustments for mobile screens */
   body {
     font-size: 14px;
   }
+
   h1 {
     font-size: 28px;
   }
+
   .nav-portrait {
     width: 45px;
   }
+
   .nav-name-text {
     font-size: 18px;
   }
+
   .nav-links-container a {
     font-size: 14px;
     padding: 8px;
   }
+
   .home-btns-container {
     flex-direction: column;
     gap: 10px;
   }
+
   .home-btns-container a {
     width: 100%;
     padding: 10px 15px;
   }
+
   .form-container {
     padding: 15px;
   }
+
   .form-and-image {
     flex-direction: column;
   }
+
   .contact-portrait-container {
     width: 100%;
     margin-top: 15px;
   }
+
   .grid {
     display: flex;
     flex-direction: column;
   }
+
   .skills-container h3 {
     font-size: 18px;
   }
+
   .experience-container .what-i-can-do a {
     font-size: 14px;
   }
 }
-
-/*# sourceMappingURL=styles.css.map */
