@@ -2,10 +2,216 @@
 <html lang="en">
 
 <head>
+  <meta charset="utf-8">
   <title>Evan Danowitz</title>
+  <link rel="shortcut icon" href="img/icons8-code-color-32.png" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,400;1,500&display=swap">
+  <link rel="stylesheet" type="text/css" href="css/styles.scss">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
+
+  <header>
+    <nav class="nav-container">
+      <div class="nav-portrait-container">
+        <a href="#">
+          <img src="img/evan-outdoor-pic.PNG" class="nav-portrait" alt="Evan Portrait">
+        </a>
+        <span class="nav-name-text">Evan Danowitz</span>
+      </div>
+      <div class="nav-links-container">
+        <a href="#home-section">Home</a>
+        <a href="#about-section">About</a>
+        <a href="#work-section">Work</a>
+        <a href="#contact-section">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home-section">
+      <div class="home-container">
+        <h1 id="home-section-heading">Evan Danowitz, Web Developer.</h1>
+        <div class="home-btns-container">
+          <a href="https://github.com/evandanowitz" id="github-btn" target="_blank">GitHub Profile</a>
+          <a href="docs/web-dev-resume.pdf" id="resume-btn" target="_blank" download>Download Resume</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about-section">
+      <div class="about-container">
+        <h1>About</h1>
+        <h3>Pleasure to meet you.</h3>
+        <p class="resume-objective">
+          Welcome. I am a Full-Stack Web Developer skilled in creating dynamic, user-friendly, and responsive apps using
+          modern front- and backend technologies. I have a strong foundation in problem-solving, project management, and
+          client communication.
+        </p>
+
+        <div class="dev-experience-container">
+          <h3>How can I help you?</h3>
+          <p>
+            Implement my proficiency in modern web technologies and some of the most in-demand frameworks and libraries
+            to
+            create full-stack web applications.
+          </p>
+          <p>
+            Deliver complete projects with a focus on code quality, user experience, responsive design, and
+            accessibility
+            standards.
+          </p>
+          <p>
+            Translate technical concepts into user-friendly documentation, enabling clearer product understanding for
+            collaborators and users.
+          </p>
+          <p>
+            Apply Agile methodologies to projects, while enhancing my problem-solving and project management skills,
+            ultimately saving you and your users time.
+          </p>
+        </div>
+
+        <div class="skills-container">
+          <h3>Skills</h3>
+          <div class="grid">
+            <div class="languages-skills">
+              <h3>Programming Languages</h3>
+              <text>JavaScript (ES6)</text><br>
+              <text>TypeScript</text><br>
+              <text>HTML5</text><br>
+              <text>CSS3</text><br>
+              <text>SCSS</text>
+            </div>
+            <div class="frameworks-libraries-skills">
+              <h3>Frameworks &amp; Libraries</h3>
+              <text>React</text><br>
+              <text>Angular</text><br>
+              <text>jQuery</text><br>
+              <text>Bootstrap</text><br>
+              <text>Redux</text><br>
+              <text>React Native</text>
+            </div>
+            <div class="backend-db-skills">
+              <h3>Backend &amp; Databases</h3>
+              <text>Node.js</text><br>
+              <text>Express</text><br>
+              <text>RESTful API</text><br>
+              <text>MongoDB</text><br>
+              <text>MySQL</text><br>
+              <text>Data Security</text><br>
+              <text>Authentication and Authorization Methodologies</text>
+            </div>
+            <div class="testing-skills">
+              <h3>Testing</h3>
+              <text>Test-Driven Development (TDD)</text><br>
+              <text>Behavior-Driven Development (BDD)</text><br>
+              <text>Unit Testing</text><br>
+              <text>Integration Testing</text><br>
+              <text>User Acceptance Testing (U2A)</text><br>
+              <text>End-to-End Testing (E2E)</text><br>
+              <text>Jest</text><br>
+              <text>Puppeteer</text><br>
+              <text>Cucumber</text><br>
+              <text>React Testing Library</text>
+            </div>
+            <div class="cloud-skills">
+              <h3>Cloud</h3>
+              <text>Serverless Architecture</text><br>
+              <text>AWS Lambda</text><br>
+              <text>Google Cloud Platform</text><br>
+              <text>Firestore</text><br>
+              <text>Firebase</text>
+            </div>
+            <div class="tools-skills">
+              <h3>Tools</h3>
+              <text>VSCode</text><br>
+              <text>Postman</text>
+            </div>
+            <div class="proj-mgmt-collab-skills">
+              <h3>Project Management &amp; Collaboration</h3>
+              <text>GitHub</text><br>
+              <text>Accessibility (WCAG 2.2)</text><br>
+              <text>Agile Methodologies</text><br>
+              <text>Jira</text><br>
+              <text>Trello</text><br>
+              <text>Asana</text><br>
+              <text>Slack</text><br>
+              <text>Salesforce</text><br>
+              <text>MS Office</text><br>
+              <text>Google Workspace (formerly G-Suite)</text>
+            </div>
+          </div>
+        </div>
+
+        <div class="experience-container">
+          <h3>Background &amp; Experience</h3>
+          <div class="what-i-can-do">
+            <a href="#" class="experience-button">Full-Stack Web Development</a>
+            <a href="#" class="experience-button">Account Management</a>
+            <a href="#" class="experience-button">Real Estate</a>
+            <a href="#" class="experience-button">Customer Service</a>
+            <a href="#" class="experience-button">Video Production</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="work-section">
+      <div class="work-container">
+        <h1>Work</h1>
+        <div class="work_item">
+          <img src="img/pokedex-laptop-img.png" class="project-img">
+          <div class="project-details">
+            <h3>Pokédex</h3>
+            <a href="./projects/pokedex.html" class="project-link">Project Details</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact-section">
+      <div class="contact-container">
+        <h1>Contact</h1>
+
+        <div class="form-and-image">
+          <div class="form-container">
+            <h2>Send me a message:</h2>
+            <form>
+              <label for="fullname">Full Name:</label>
+              <input type="text" id="fullname" placeholder="Your Name">
+              <label for="email">Email:</label>
+              <input type="email" id="email" placeholder="Your Email">
+              <label for="message">Message:</label>
+              <textarea id="message" placeholder="Your Message"></textarea>
+              <input type="submit" value="Submit">
+            </form>
+          </div>
+
+          <div class="contact-portrait-container">
+            <img src="img/evan-outdoor-pic.PNG" class="contact-portrait" alt="Evan Portrait">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="social-media-container">
+        <h3>Social Media</h3>
+        <a id="github-logo" href="https://github.com/evandanowitz" target="_blank">
+          <img src="img/githublogo.svg" height="40" width="40" alt="Github"></a>
+        <a id="twitter-logo" href="https://www.twitter.com" target="_blank">
+          <img src="img/twitterlogo.svg" height="40" width="40" alt="Twitter"></a>
+        <a id="linkedin-logo" href="https://www.linkedin.com/in/evandanowitz" target="_blank">
+          <img src="img/linkedinlogo.svg" height="40" width="40" alt="LinkedIn"></a>
+      </div>
+    </footer>
+
+  </main>
 
 </body>
 
