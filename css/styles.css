@@ -20,7 +20,7 @@ main {
   padding: 0px 20px;
 }
 main #home-section {
-  background-color: #ffccb3;
+  background-color: #e5feff;
   padding: 50px 20px;
   border: 2px solid #00575b;
 }
@@ -50,9 +50,22 @@ main #home-section .home-content .home-portrait-container .home-portrait {
   border-radius: 10px;
   border: 1px solid #333;
 }
-main #about-section,
-main #skills-section,
-main #work-section,
+main #about-section {
+  background-color: #e0ffd7;
+  padding: 50px 20px;
+  border: 2px solid #00575b;
+}
+main #skills-section {
+  background-color: #7fce63;
+  padding: 50px 20px;
+  border: 2px solid #00575b;
+}
+main #work-section {
+  background-color: #ffccb3;
+  background-color: #fdffdc;
+  padding: 50px 20px;
+  border: 2px solid #00575b;
+}
 main #contact-section {
   background-color: #ffccb3;
   padding: 50px 20px;
@@ -414,7 +427,6 @@ footer .social-media-container a img {
   border-radius: 5px;
 }
 
-/* Font Classes */
 .roboto-regular {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -429,6 +441,116 @@ footer .social-media-container a img {
 .roboto-regular .roboto-medium-italic {
   font-weight: 500;
   font-style: italic;
+}
+
+@media (max-width: 600px) {
+  body {
+    font-size: 14px;
+    padding-top: 50px;
+  }
+  header .nav-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  header .nav-container .nav-links-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+  header .nav-container .nav-links-container a {
+    font-size: 16px;
+    padding: 8px 12px;
+  }
+  .skills-container .grid {
+    grid-template-columns: 1fr;
+  }
+  .form-and-image {
+    flex-direction: column;
+    gap: 15px;
+  }
+  footer {
+    padding: 10px;
+  }
+}
+@media (min-width: 601px) and (max-width: 1024px) {
+  body {
+    font-size: 15px;
+    padding-top: 80px;
+  }
+  header .nav-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  header .nav-links-container {
+    flex-direction: row;
+    gap: 20px;
+  }
+  header .nav-links-container a {
+    font-size: 17px;
+    padding: 10px 15px;
+  }
+  .skills-container .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .form-and-image {
+    flex-direction: column;
+    gap: 20px;
+  }
+  footer {
+    padding: 15px;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1440px) {
+  body {
+    font-size: 16px;
+    padding-top: 100px;
+  }
+  header .nav-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  header .nav-links-container {
+    flex-direction: row;
+    gap: 25px;
+  }
+  header .nav-links-container a {
+    font-size: 18px;
+    padding: 10px 20px;
+  }
+  .skills-container .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .form-and-image {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .form-container,
+  .contact-portrait-container {
+    flex: 1;
+    max-width: 50%;
+  }
+  footer {
+    padding: 20px;
+  }
+}
+@media (min-width: 1441px) {
+  body {
+    font-size: 18px;
+  }
+  .skills-container .grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .form-and-image {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .form-container,
+  .contact-portrait-container {
+    flex: 1;
+    max-width: 50%;
+  }
+  footer {
+    padding: 25px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
