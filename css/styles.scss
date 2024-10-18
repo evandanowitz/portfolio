@@ -21,8 +21,8 @@ main {
   padding: 0px 20px;
 
   #home-section {
-    // background-color: #ffccb3;
-    background-color: #e5feff;
+    background-color: #ffccb3;
+    // background-color: #e5feff;
     // background-color: #e0f7fa;
     padding: 50px 20px;
     border: 2px solid #00575b;
@@ -48,6 +48,7 @@ main {
       .home-portrait-container {
         flex: 1;
         text-align: center;
+        margin-top: 20px;
 
         .home-portrait {
           max-width: 100%;
@@ -60,21 +61,23 @@ main {
   }
 
   #about-section {
-    // background-color: #ffccb3;
-    background-color: #e0ffd7;
+    background-color: #ffccb3;
+    // background-color: #e0ffd7;
     padding: 50px 20px;
     border: 2px solid #00575b;
   }
 
   #skills-section {
     background-color: #7fce63;
+    // background-color: #e0ffd7;
     padding: 50px 20px;
     border: 2px solid #00575b;
   }
 
   #work-section {
     background-color: #ffccb3;
-    background-color: #fdffdc;
+    // background-color: #fdffdc;
+    // background-color: #e0ffd7;
     padding: 50px 20px;
     border: 2px solid #00575b;
   }
@@ -191,7 +194,7 @@ section {
   width: 100%;
 
   a {
-    padding: 10px 0;
+    padding: 5px 5px;
     border: 2px solid;
     text-align: center;
     text-decoration: none;
@@ -371,6 +374,87 @@ section {
   }
 }
 
+// .form-and-image {
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: stretch;
+//   gap: 20px;
+
+//   .form-container {
+//     background-color: #fff;
+//     padding: 25px;
+//     border-radius: 10px;
+//     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+//     flex: 1;
+//     border: 1px solid #ccc;
+
+//     h2 {
+//       text-align: center;
+//     }
+
+//     form {
+//       display: flex;
+//       flex-direction: column;
+//       gap: 5px;
+//       width: 100%;
+//       align-items: center;
+
+//       label {
+//         font-size: 18px;
+//         font-weight: bold;
+//         text-align: left;
+//         width: 100%;
+//       }
+
+//       textarea {
+//         height: 75px;
+//       }
+
+//       input[type="text"],
+//       input[type="email"],
+//       textarea {
+//         width: 100%;
+//         padding: 10px;
+//         border: 1px solid #ccc;
+//         border-radius: 5px;
+//         margin-top: 5px;
+//         margin-bottom: 15px;
+//       }
+
+//       input[type="submit"] {
+//         background-color: #ffccb3;
+//         color: #333;
+//         letter-spacing: .5px;
+//         border: 1px solid #ccc;
+//         font-size: 14px;
+//         border-radius: 5px;
+//         padding: 10px 15px;
+//         cursor: pointer;
+//         width: 25%;
+//         transition: background-color 0.3s;
+
+//         &:hover {
+//           transform: scale(1.1);
+//         }
+//       }
+//     }
+//   }
+
+//   .coding-cartoon-container {
+//     display: flex;
+//     flex: 1;
+//     // flex: 2; // Explore this later (larger image, smaller form)
+//     justify-content: center;
+//     text-align: center;
+
+//     .coding-cartoon {
+//       max-width: 100%;
+//       height: auto;
+//       border-radius: 10px;
+//     }
+//   }
+// }
+
 .form-and-image {
   display: flex;
   justify-content: space-between;
@@ -389,50 +473,21 @@ section {
       text-align: center;
     }
 
-    form {
+    .contact-info {
       display: flex;
       flex-direction: column;
       gap: 5px;
       width: 100%;
       align-items: center;
 
-      label {
+      .contact-name,
+      .contact-phone,
+      .contact-email {
         font-size: 18px;
+        font-size: 24px;
         font-weight: bold;
         text-align: left;
         width: 100%;
-      }
-
-      textarea {
-        height: 75px;
-      }
-
-      input[type="text"],
-      input[type="email"],
-      textarea {
-        width: 100%;
-        padding: 10px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        margin-top: 5px;
-        margin-bottom: 15px;
-      }
-
-      input[type="submit"] {
-        background-color: #ffccb3;
-        color: #333;
-        letter-spacing: .5px;
-        border: 1px solid #ccc;
-        font-size: 14px;
-        border-radius: 5px;
-        padding: 10px 15px;
-        cursor: pointer;
-        width: 25%;
-        transition: background-color 0.3s;
-
-        &:hover {
-          transform: scale(1.1);
-        }
       }
     }
   }

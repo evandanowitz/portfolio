@@ -20,7 +20,7 @@ main {
   padding: 0px 20px;
 }
 main #home-section {
-  background-color: #e5feff;
+  background-color: #ffccb3;
   padding: 50px 20px;
   border: 2px solid #00575b;
 }
@@ -43,6 +43,7 @@ main #home-section .home-content .resume-objective-container p {
 main #home-section .home-content .home-portrait-container {
   flex: 1;
   text-align: center;
+  margin-top: 20px;
 }
 main #home-section .home-content .home-portrait-container .home-portrait {
   max-width: 100%;
@@ -51,7 +52,7 @@ main #home-section .home-content .home-portrait-container .home-portrait {
   border: 1px solid #333;
 }
 main #about-section {
-  background-color: #e0ffd7;
+  background-color: #ffccb3;
   padding: 50px 20px;
   border: 2px solid #00575b;
 }
@@ -62,7 +63,6 @@ main #skills-section {
 }
 main #work-section {
   background-color: #ffccb3;
-  background-color: #fdffdc;
   padding: 50px 20px;
   border: 2px solid #00575b;
 }
@@ -165,7 +165,7 @@ section {
   width: 100%;
 }
 .home-btns-container a {
-  padding: 10px 0;
+  padding: 5px 5px;
   border: 2px solid;
   text-align: center;
   text-decoration: none;
@@ -337,46 +337,21 @@ section {
 .form-and-image .form-container h2 {
   text-align: center;
 }
-.form-and-image .form-container form {
+.form-and-image .form-container .contact-info {
   display: flex;
   flex-direction: column;
   gap: 5px;
   width: 100%;
   align-items: center;
 }
-.form-and-image .form-container form label {
+.form-and-image .form-container .contact-info .contact-name,
+.form-and-image .form-container .contact-info .contact-phone,
+.form-and-image .form-container .contact-info .contact-email {
   font-size: 18px;
+  font-size: 24px;
   font-weight: bold;
   text-align: left;
   width: 100%;
-}
-.form-and-image .form-container form textarea {
-  height: 75px;
-}
-.form-and-image .form-container form input[type=text],
-.form-and-image .form-container form input[type=email],
-.form-and-image .form-container form textarea {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  margin-top: 5px;
-  margin-bottom: 15px;
-}
-.form-and-image .form-container form input[type=submit] {
-  background-color: #ffccb3;
-  color: #333;
-  letter-spacing: 0.5px;
-  border: 1px solid #ccc;
-  font-size: 14px;
-  border-radius: 5px;
-  padding: 10px 15px;
-  cursor: pointer;
-  width: 25%;
-  transition: background-color 0.3s;
-}
-.form-and-image .form-container form input[type=submit]:hover {
-  transform: scale(1.1);
 }
 .form-and-image .coding-cartoon-container {
   display: flex;
