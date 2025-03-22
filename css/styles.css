@@ -99,7 +99,7 @@ main #about-section {
 main #about-section h1 {
   margin-bottom: 30px;
 }
-main #about-section p {
+main #about-section .about-text {
   font-size: 18px;
   line-height: 1.6;
   margin-bottom: 20px;
