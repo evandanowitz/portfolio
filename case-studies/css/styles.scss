@@ -1,6 +1,7 @@
 @import 'navbar';
 
-$default-padding: 60px 30px;
+$default-padding-y: 30px;
+$default-padding-x: 30px;
 $default-font: 'Roboto', sans-serif;
 $overlay-bg: rgba(255, 255, 255, 0.9);
 $navbar-height: 100px;
@@ -23,7 +24,7 @@ $navbar-height: 100px;
 %slide-style {
   position: relative;
   overflow: hidden;
-  padding: $default-padding;
+  padding: $default-padding-y $default-padding-x;
   font-family: $default-font;
   color: #333;
 }
@@ -31,10 +32,6 @@ $navbar-height: 100px;
 %content-style {
   position: relative;
   z-index: 1;
-}
-
-body {
-  padding-top: $navbar-height;
 }
 
 .first-slide,
@@ -49,6 +46,8 @@ body {
 }
 
 .first-slide {
+  padding-top: calc(#{$default-padding-y} + #{$navbar-height});
+
   .background {
     @extend %background-style;
     background-image: url('../../img/bitebase-cs-images/marble-backdrop.jpg');
@@ -82,15 +81,15 @@ body {
     .laptop-images {
       display: flex;
       justify-content: center;
-      gap: 10px;
+      gap: 20px;
       flex-wrap: wrap;
       margin: 20px 0;
 
       img {
-        flex: 1 1 280px;
+        width: 45%;
         max-width: 360px;
-        width: 100%;
         height: auto;
+        flex-grow: 1;
       }
     }
 
@@ -110,7 +109,7 @@ body {
     }
   }
 
-  @media (max-width: 650px) {
+  @media (max-width: 500px) {
     .content {
       h2 {
         white-space: normal;
@@ -122,6 +121,7 @@ body {
 
         img {
           max-width: 90%;
+          max-width: 400px;
         }
       }
     }
@@ -506,5 +506,24 @@ body {
         height: 40px;
       }
     }
+  }
+}
+
+#backToTopBtn {
+  display: block;
+  margin: 30px auto 10px auto;
+  font-size: 28px;
+  background-color: #00575b;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  padding: 16px 20px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease;
+
+  &:hover {
+    background-color: #003c40;
+    transform: scale(1.1);
   }
 }
