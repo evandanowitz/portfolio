@@ -35,7 +35,22 @@
     </nav>
   </header>
 
-  <div class="first-slide">
+  <div class="case-dropdown-container">
+    <label for="case-section-dropdown">Jump to Section:</label>
+    <select id="case-section-dropdown" onchange="scrollToSection(this.value)">
+      <option disabled selected>Select a section</option>
+      <option value="slide-1">Intro</option>
+      <option value="slide-2">Overview</option>
+      <option value="slide-3">Timeline &amp; Credits</option>
+      <option value="slide-4">Tools</option>
+      <option value="slide-5">Core Features</option>
+      <option value="slide-6">Challenges</option>
+      <option value="slide-7">Page Views</option>
+      <option value="slide-8">Final Thoughts</option>
+    </select>
+  </div>
+
+  <div class="first-slide" id="slide-1">
     <div class="background"></div>
     <div class="content">
       <h2 class="bitebase-title-header">BiteBase – Case Study</h2>
@@ -56,7 +71,7 @@
     </div>
   </div>
   <hr>
-  <div class="second-slide">
+  <div class="second-slide" id="slide-2">
     <div class="background"></div>
     <div class="content">
       <h2>Overview</h2>
@@ -83,7 +98,7 @@
     </div>
   </div>
   <hr>
-  <div class="third-slide">
+  <div class="third-slide" id="slide-3">
     <div class="background"></div>
     <div class="content">
       <h2>Project Timeline &amp; Development Role</h2>
@@ -109,7 +124,7 @@
     </div>
   </div>
   <hr>
-  <div class="fourth-slide">
+  <div class="fourth-slide" id="slide-4">
     <div class="background"></div>
     <div class="content">
       <h2>Tools &amp; Technologies</h2>
@@ -126,7 +141,7 @@
     </div>
   </div>
   <hr>
-  <div class="fifth-slide">
+  <div class="fifth-slide" id="slide-5">
     <div class="background"></div>
     <div class="content">
       <h2>Core Features &amp; Functionality</h2>
@@ -185,7 +200,7 @@
     </div>
   </div>
   <hr>
-  <div class="sixth-slide">
+  <div class="sixth-slide" id="slide-6">
     <div class="background"></div>
     <div class="content">
       <h2>Challenges Faced &amp; Lessons Learned</h2>
@@ -237,7 +252,7 @@
     </div>
   </div>
   <hr>
-  <div class="seventh-slide">
+  <div class="seventh-slide" id="slide-7">
     <div class="background"></div>
     <div class="content">
       <h2>Page Views</h2>
@@ -256,7 +271,7 @@
     </div>
   </div>
   <hr>
-  <div class="eighth-slide">
+  <div class="eighth-slide" id="slide-8">
     <div class="background"></div>
     <div class="content">
       <div>
@@ -331,6 +346,17 @@
     backToTopBtn.addEventListener("click", function () {
       window.scrollTo({ top: 0, behavior: "smooth" });
     });
+  </script>
+
+  <script>
+    function scrollToSection(sectionId) {
+      const section = document.getElementById(sectionId);
+      if (section) {
+        const offset = 120;
+        const topPos = section.getBoundingClientRect().top + window.scrollY - offset;
+        window.scrollTo({ top: topPos, behavior: 'smooth' });
+      }
+    }
   </script>
 
 </body>

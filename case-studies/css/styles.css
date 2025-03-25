@@ -56,6 +56,10 @@ header .nav-container .nav-links-container a:hover {
   border-radius: 50px;
 }
 
+html {
+  scroll-padding-top: 100px;
+}
+
 .eighth-slide .background, .seventh-slide .background, .sixth-slide .background, .fifth-slide .background, .fourth-slide .background, .third-slide .background, .second-slide .background, .first-slide .background {
   background-size: cover;
   background-position: center;
@@ -88,6 +92,32 @@ header .nav-container .nav-links-container a:hover {
 .eighth-slide .content, .seventh-slide .content, .sixth-slide .content, .fifth-slide .content, .fourth-slide .content, .third-slide .content, .second-slide .content, .first-slide .content {
   position: relative;
   z-index: 1;
+}
+
+.case-dropdown-container {
+  position: sticky;
+  top: 100px;
+  background-color: #fff;
+  padding: 10px 20px;
+  z-index: 999;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+.case-dropdown-container label {
+  font-size: 18px;
+  font-weight: 500;
+  margin-right: 10px;
+}
+.case-dropdown-container select {
+  font-size: 16px;
+  padding: 8px 14px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+.case-dropdown-container select:focus {
+  outline: none;
+  border-color: #00575b;
+  box-shadow: 0 0 4px rgba(0, 87, 91, 0.3);
 }
 
 .first-slide {
