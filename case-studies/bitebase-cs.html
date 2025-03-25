@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>BiteBase - Case Study</title>
+  <link rel="shortcut icon" href="../img/icons8-code-color-32.png" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,400;1,500&display=swap">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Montserrat:wght@400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+  <header>
+    <nav class="nav-container">
+      <div class="nav-portrait-container">
+        <a href="../index.html">
+          <img src="../img/evan-outdoor-pic.PNG" class="nav-portrait" alt="Evan Portrait">
+        </a>
+        <span class="nav-name-text">Evan Danowitz</span>
+      </div>
+      <div class="nav-links-container">
+        <a href="../index.html#home-section">Home</a>
+        <a href="../index.html#about-section">About</a>
+        <a href="../index.html#work-section">Work</a>
+        <a href="../index.html#contact-section">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <div class="first-slide">
+    <div class="background"></div>
+    <div class="content">
+      <h2 class="bitebase-title-header">BiteBase – Case Study</h2>
+      <h4>A Python-based Django Recipe Management Web Application</h4>
+      <h6>Developer: Evan Danowitz</h6>
+
+      <div class="laptop-images">
+        <img src="../img/bitebase-cs-images/recipe-laptop-img.png.png" alt="Image of recipe app on laptop">
+        <img src="../img/bitebase-cs-images/recipe-laptop-img.png" alt="Image of recipe app code on laptop">
+      </div>
+
+      <p class="links-paragraph">
+        Try out the BiteBase application
+        <a href="https://stormy-bastion-86574-32ed47450529.herokuapp.com/" target="_blank">here</a>
+        or take a look at my code on GitHub
+        <a href="https://github.com/evandanowitz/recipe-app" target="_blank">here</a>.
+      </p>
+    </div>
+  </div>
+  <hr>
+  <div class="second-slide">
+    <div class="background"></div>
+    <div class="content">
+      <h2>Overview</h2>
+      <p>
+        <b>BiteBase</b> is a Django-powered web app where users can <b>create, edit</b>, and <b>manage recipes</b>. They
+        can <b>save details</b> like name, cooking time, ingredients, and an optional image. The app automatically
+        calculates difficulty based on input values.
+      </p>
+      <p>
+        It also includes <b>user authentication</b> (signup, login, logout), a <b>custom search form</b> (filter by name
+        or ingredient), and dynamic <b>data visualization</b> to track recipe trends. Each user has a <b>profile
+          page</b> with basic account details and the option to <b>delete their account</b>.
+      </p>
+    </div>
+    <hr>
+    <div class="content">
+      <h2>Purpose &amp; Objective</h2>
+      <p>
+        The purpose of creating BiteBase was to <b>showcase my Django and frontend skills</b> while
+        creating a fully-functional and user-friendly application. While the goal wasn't to
+        necessarily solve a real-world problem, it <b>demonstrates my ability to structure, develop,
+          and style a full-stack web application</b> that follows best practices and industry standards.
+      </p>
+    </div>
+  </div>
+  <hr>
+  <div class="third-slide">
+    <div class="background"></div>
+    <div class="content">
+      <h2>Project Timeline &amp; Development Role</h2>
+      <p>📅 <b>Duration: </b>The development of BiteBase took <b>two months</b> to develop.</p>
+      <p>
+        Before transitioning to Django, I previously developed a command-line version of the BiteBase
+        application. The <b>transition to Django allowed me to expand its functionality</b> and implement a
+        complete web-based interface.
+      </p>
+      <p>
+        I served as the <b>lead (and sole) full-stack developer for every aspect of BiteBase</b>. Throughout the
+        project, I was responsible for planning, designing, and implementing both the backend and
+        frontend components. To progress through each stage, I required approval from my dedicated
+        course mentor, who provided feedback but did not directly guide the development process.
+      </p>
+    </div>
+    <div class="content">
+      <h2>Credits</h2>
+      <div class="credits-row">
+        <p><b>Lead Developer</b>: Evan Danowitz</p>
+        <p><b>Mentor</b>: Alfredo Salazar Vélez</p>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <div class="fourth-slide">
+    <div class="background"></div>
+    <div class="content">
+      <h2>Tools &amp; Technologies</h2>
+      <p>🖥 <b>Backend:</b> Django web framework, Python</p>
+      <p>🎨 <b>Frontend:</b> HTML5, CSS3, Bootstrap, JavaScript</p>
+      <p>📊 <b>Database:</b> SQLite (development), PostgreSQL (production)</p>
+      <p>🚀 <b>Hosting &amp; Deployment:</b> Heroku</p>
+      <p>🔗 <b>Version Control:</b> Git, GitHub</p>
+
+      <div class="tools-image">
+        <img src="../img/bitebase-cs-images/guy-at-desk-img (6).png" alt="Image of Guy Sitting at a Desk"
+          style="width: 400px; height: auto;">
+      </div>
+    </div>
+  </div>
+  <hr>
+  <div class="fifth-slide">
+    <div class="background"></div>
+    <div class="content">
+      <h2>Core Features &amp; Functionality</h2>
+
+      <h3>Recipe Management</h3>
+      <ul>
+        <li>Users can <b>create, edit, delete and store recipes</b> in a database</li>
+        <li>Recipes contain essential details: <i>name</i>, <i>cooking time</i>, <i>ingredients</i>, <i>description</i>,
+          and an optional <i>image</i></li>
+        <li>The application automatically calculates a difficulty level based on cooking time and number of ingredients
+        </li>
+      </ul>
+      <img src="../img/bitebase-cs-images/recipe-list-code.png" style="width: 110px; height: auto;">
+      <img src="../img/bitebase-cs-images/create-recipe-code.png" style="width: 150px; height: auto;">
+      <img src="../img/bitebase-cs-images/edit-recipe-code.png" style="width: 150px; height: auto;">
+      <img src="../img/bitebase-cs-images/delete-recipe-code.png" style="width: 160px; height: auto;">
+
+      <h3>User Authentication &amp; Account Management</h3>
+      <ul>
+        <li>Secure <b>user authentication</b> - signip, login, logout</li>
+        <li>Custom <b>profile page</b> displaying username, email, and first name</li>
+        <li>Ability to <b>delete account</b>, eliminating all user data</li>
+      </ul>
+      <img src="../img/bitebase-cs-images/Screenshot 2025-03-21 at 3.12.10 PM.png" style="width: 150px; height: auto;">
+      <img src="../img/bitebase-cs-images/Screenshot 2025-03-21 at 3.12.26 PM.png" style="width: 140px; height: auto;">
+      <img src="../img/bitebase-cs-images/Screenshot 2025-03-21 at 3.12.38 PM.png" style="width: 150px; height: auto;">
+
+      <h3>Search &amp; Dynamic Data Visualization</h3>
+      <ul>
+        <li><b>Search recipes</b> by name, ingredient, or difficulty level</li>
+        <li>Toggle <b>search form</b> for improved user experience</li>
+        <li>Three <b>interactive charts</b> for data analysis
+          <ul>
+            <li><i>Bar</i> Chart: Recipes by difficulty level</li>
+            <li><i>Pie</i> Chart: Cooking time distribution</li>
+            <li><i>Line</i> Chart: Most common ingredients</li>
+          </ul>
+        </li>
+        <li><b>Charts dynamically update</b> based on search filters</li>
+        <li><b>Error handling</b> - Displays messages when no search results are found</li>
+      </ul>
+      <div class="chart-group">
+        <img src="../img/bitebase-cs-images/bar-chart.png" alt="Bar Chart" style="width: 201px; height: auto;">
+        <img src="../img/bitebase-cs-images/pie-chart.png" alt="Bar Chart" style="width: 200px; height: auto;">
+        <img src="../img/bitebase-cs-images/line-chart.png" alt="Bar Chart" style="width: 201.5px; height: auto;">
+      </div>
+
+      <h3>Deployment &amp; Performance Considerations</h3>
+      <ul>
+        <li>Hosted on <b>Heroku</b> for <b>live accessibility</b></li>
+        <li><b>Cloudinary integration</b> for image uploads in production</li>
+        <li><b>Responsive design</b> for various screen sizes and devices</li>
+      </ul>
+      <img src="../img/bitebase-cs-images/Screenshot 2025-03-21 at 3.16.32 PM.png"
+        style="width: 201.5px; height: auto;">
+    </div>
+  </div>
+  <hr>
+  <div class="sixth-slide">
+    <div class="background"></div>
+    <div class="content">
+      <h2>Challenges Faced &amp; Lessons Learned</h2>
+
+      <div>
+        <h3>Version Control &amp; Repository Structure</h3>
+        <p>
+          Managing code between multiple repositories was initially confusing, especially when merging changes and
+          pushing updates to the final recipe-app repository. Through practice, I became more comfortable with Git
+          workflows.
+        </p>
+      </div>
+      <div>
+        <h3>Understanding Virtual Environments</h3>
+        <p>
+          Initially, I struggled with when to activate, use, and manage virtual environments Repeated practice helped
+          solidify this.
+        </p>
+      </div>
+      <div>
+        <h3>Test-Writing Strategy</h3>
+        <p>
+          Determining what to test and how to structure test coverage was overwhelming. A lot that came from trying to
+          ensure that I don't miss anything and cover all bases. Breaking tests into models, views, forms, and templates
+          made it more manageable.
+        </p>
+      </div>
+      <div>
+        <h3>Handling Deleted Recipe Navigation Issues</h3>
+        <p>
+          If a user deleted a recipe and clicked back in the browser, they would see a cached version that no longer
+          existed, causing the app to break. The solution was to redirect users to the recipes list upon successful
+          deletion to prevent navigation errors.
+        </p>
+      </div>
+      <div>
+        <h3>Image Uploads in Deployment</h3>
+        <p>
+          The live Heroku version of the application could not handle image uploads like the local app could. After
+          research and testing, I implemented Cloudinary as an image hosting solution for BiteBase.
+        </p>
+      </div>
+      <div>
+        <h3>Final Deployment Troubleshooting</h3>
+        <p>
+          Some Heroku deployment guides were outdated, requiring additional research to troubleshoot missing steps.
+        </p>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <div class="seventh-slide">
+    <div class="background"></div>
+    <div class="content">
+      <h2>Page Views</h2>
+
+      <div class="page-views">
+        <img src="../img/bitebase-cs-images/home-page.png" style="width: 200px; height: auto;">
+        <img src="../img/bitebase-cs-images/signup-page.png" style="width: 200px; height: 184px;">
+        <img src="../img/bitebase-cs-images/login-page.png" style="width: 200px; height: auto;">
+        <img src="../img/bitebase-cs-images/recipes-page.png" style="width: 200px; height: auto;">
+        <img src="../img/bitebase-cs-images/details-page.png" style="width: 200px; height: auto;">
+        <img src="../img/bitebase-cs-images/create-page.png" style="width: 200px; height: auto;">
+        <img src="../img/bitebase-cs-images/profile-page.png" style="width: 200px; height: auto;">
+        <img src="../img/bitebase-cs-images/about-page.png" style="width: 200px; height: auto;">
+        <img src="../img/bitebase-cs-images/logout-page.png" style="width: 200px; height: auto;">
+      </div>
+    </div>
+  </div>
+  <hr>
+  <div class="eighth-slide">
+    <div class="background"></div>
+    <div class="content">
+      <div>
+        <h2><b>Main Takeaway:</b> Django's Power &amp; Automation</h2>
+        <p>
+          One of my biggest takeaways was how <b>Django simplifies complex backend functionality</b>, truly
+          allowing for developers to focus more on application logic and what matters most–the users.
+        </p>
+      </div>
+      <hr>
+      <div>
+        <h2>Future Application Upgrades &amp; Next Steps</h2>
+        <p>
+          While BiteBase is fully functional in its current state, I have several <b>ideas for future improvements:</b>
+        </p>
+        <ul>
+          <li><b>User Account Management:</b> Allow users to edit/update their username, password, and other personal
+            details.</li>
+          <li><b>Favorite Recipes:</b> Enable users to add and remove recipes from a favorites list, accessible from
+            their
+            profile.</li>
+          <li><b>Styling Refinements:</b> Reduce the default Bootstrap aesthetic by incorporating more custom styling.
+          </li>
+        </ul>
+      </div>
+      <hr>
+      <div>
+        <h2>Final Thoughts</h2>
+        <p>
+          Building BiteBase was a <b>valuable learning experience</b>, reinforcing my knowledge of Django, database
+          management, user authentication, and frontend development.
+        </p>
+        <p>
+          This project not only <b>showcases my technical skills</b> but also <b>highlights my problem-solving abilities
+            and adaptability</b> in overcoming challenges across all aspects of the development process.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <footer class="case-study-footer">
+    <h2>Connect with Me</h2>
+    <div class="social-media-icons">
+      <a href="https://github.com/evandanowitz" target="_blank">
+        <img src="../img/github_square_icon.svg" alt="GitHub">
+      </a>
+      <a href="https://x.com/EvanDanoWebDev" target="_blank">
+        <img src="../img/x_twitter_logo_icon.svg" alt="Twitter">
+      </a>
+      <a href="https://www.linkedin.com/in/evandanowitz" target="_blank">
+        <img src="../img/linkedinlogo.svg" alt="LinkedIn">
+      </a>
+      <a href="https://medium.com/@evandanowitz21" target="_blank">
+        <img src="../img/medium_logo_icon.svg" alt="Medium">
+      </a>
+    </div>
+  </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+// _navbar.scss (or _case-study-navbar.scss)
+
+header {
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px;
+    background-color: #fff;
+    font-family: Roboto;
+    width: 100%;
+    height: 100px;
+    box-sizing: border-box;
+
+    .nav-portrait-container {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+
+      .nav-portrait {
+        width: 75px;
+        height: auto;
+        border-radius: 50px;
+      }
+
+      .nav-name-text {
+        font-size: 24px;
+        font-weight: bold;
+        color: #000;
+      }
+
+      .nav-portrait,
+      .nav-name-text:hover {
+        opacity: 0.8;
+      }
+    }
+
+    .nav-links-container {
+      display: flex;
+      gap: 25px;
+
+      a {
+        color: #333;
+        text-decoration: none;
+        padding: 10px 15px;
+        border-radius: 50px;
+        font-size: 18px;
+        transition: background-color 0.3s;
+        cursor: pointer;
+
+        &:hover {
+          background: linear-gradient(135deg, #e0f7fa, #ffe5d9);
+          color: #333;
+          border-radius: 50px;
+        }
+      }
+    }
+  }
+}

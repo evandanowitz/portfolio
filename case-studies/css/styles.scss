@@ -1,0 +1,510 @@
+@import 'navbar';
+
+$default-padding: 60px 30px;
+$default-font: 'Roboto', sans-serif;
+$overlay-bg: rgba(255, 255, 255, 0.9);
+$navbar-height: 100px;
+
+%background-style {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: $overlay-bg;
+  // background-blend-mode: lighten;
+  opacity: 0.25;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+%slide-style {
+  position: relative;
+  overflow: hidden;
+  padding: $default-padding;
+  font-family: $default-font;
+  color: #333;
+}
+
+%content-style {
+  position: relative;
+  z-index: 1;
+}
+
+body {
+  padding-top: $navbar-height;
+}
+
+.first-slide,
+.second-slide,
+.third-slide,
+.fourth-slide,
+.fifth-slide,
+.sixth-slide,
+.seventh-slide,
+.eighth-slide {
+  @extend %slide-style;
+}
+
+.first-slide {
+  .background {
+    @extend %background-style;
+    background-image: url('../../img/bitebase-cs-images/marble-backdrop.jpg');
+  }
+
+  .content {
+    @extend %content-style;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
+
+    h2 {
+      font-size: 64px;
+      margin-bottom: 10px;
+      white-space: nowrap;
+    }
+
+    h4 {
+      font-size: 24px;
+      margin-bottom: 0;
+    }
+
+    h6 {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    .laptop-images {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin: 20px 0;
+
+      img {
+        flex: 1 1 280px;
+        max-width: 360px;
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    .links-paragraph {
+      font-size: 18px;
+      margin-top: 10px;
+
+      a {
+        color: #00575b;
+        font-weight: 500;
+        text-decoration: underline;
+
+        &:hover {
+          color: #003c40;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 650px) {
+    .content {
+      h2 {
+        white-space: normal;
+      }
+
+      .laptop-images {
+        flex-direction: column;
+        align-items: center;
+
+        img {
+          max-width: 90%;
+        }
+      }
+    }
+  }
+}
+
+.second-slide {
+  .background {
+    @extend %background-style;
+    background-image: url('../../img/bitebase-cs-images/login-page-bg-img.jpg');
+  }
+
+  .content {
+    @extend %content-style;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+
+    h2 {
+      font-size: 40px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      margin-bottom: 16px;
+      line-height: 1.6;
+    }
+  }
+}
+
+.third-slide {
+  .background {
+    @extend %background-style;
+    background-image: url('../../img/bitebase-cs-images/various-grocery-products-concrete-surface.jpg');
+  }
+
+  .content {
+    @extend %content-style;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+
+    h2 {
+      font-size: 40px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      margin-bottom: 16px;
+      line-height: 1.6;
+    }
+
+    .credits-row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+      margin-top: 20px;
+
+      p {
+        white-space: nowrap;
+        margin: 0;
+      }
+    }
+  }
+}
+
+.fourth-slide {
+  .background {
+    @extend %background-style;
+    background-image: url('../../img/bitebase-cs-images/top-close-up-view-spices-bowls-spices-citrus-fruits-garlic.jpg');
+  }
+
+  .content {
+    @extend %content-style;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+
+    h2 {
+      font-size: 40px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 18px;
+      margin-bottom: 12px;
+    }
+
+    .tools-image {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      margin-top: 20px;
+
+      img {
+        width: 400px;
+        height: auto;
+        border-radius: 12px;
+        display: block;
+      }
+    }
+  }
+}
+
+.fifth-slide {
+  .background {
+    @extend %background-style;
+    background-image: url('../../img/bitebase-cs-images/warm-textured-bg.jpg');
+  }
+
+  .content {
+    @extend %content-style;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+
+    h2 {
+      font-size: 40px;
+      margin-bottom: 20px;
+    }
+
+    h3 {
+      font-size: 28px;
+      margin-top: 30px;
+      margin-bottom: 16px;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+      margin-bottom: 20px;
+
+      li {
+        margin-bottom: 8px;
+      }
+    }
+
+    img {
+      display: block;
+      margin: 12px auto;
+      max-width: 100%;
+      height: auto;
+    }
+
+    .chart-group {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-top: 20px;
+
+      img {
+        width: 200px;
+        height: auto;
+      }
+    }
+  }
+
+  @media (max-width: 600px) {
+    .content {
+      h2 {
+        font-size: 34px;
+      }
+
+      h3 {
+        font-size: 24px;
+      }
+
+      .chart-group {
+        justify-content: center;
+
+        img {
+          width: 90%;
+          max-width: 250px;
+        }
+      }
+    }
+  }
+}
+
+.sixth-slide {
+  .background {
+    @extend %background-style;
+    background-image: url('../../img/bitebase-cs-images/warm-bg.jpg');
+  }
+
+  .content {
+    @extend %content-style;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+
+    h2 {
+      font-size: 40px;
+      margin-bottom: 30px;
+    }
+
+    h3 {
+      font-size: 26px;
+      margin-top: 20px;
+      margin-bottom: 10px;
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 6px;
+      display: inline-block;
+    }
+
+    p {
+      font-size: 17px;
+      line-height: 1.7;
+      margin-bottom: 20px;
+      padding: 0 10px;
+    }
+
+    div {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .content {
+      h2 {
+        font-size: 32px;
+      }
+
+      h3 {
+        font-size: 22px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+.seventh-slide {
+  .background {
+    @extend %background-style;
+    background-image: url('../../img/bitebase-cs-images/textured-bg.jpg');
+  }
+
+  .content {
+    @extend %content-style;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+
+    h2 {
+      font-size: 40px;
+      margin-bottom: 30px;
+    }
+
+    .page-views {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 20px;
+
+      img {
+        width: 400px;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s ease;
+
+        &:hover {
+          transform: scale(1.03);
+        }
+      }
+    }
+  }
+
+  @media (max-width: 600px) {
+    .content {
+      h2 {
+        font-size: 32px;
+      }
+
+      .page-views img {
+        width: 100%;
+        max-width: 400px;
+      }
+    }
+  }
+}
+
+.eighth-slide {
+  .background {
+    @extend %background-style;
+    background-image: url('../../img/bitebase-cs-images/various-grocery-products-concrete-surface.jpg');
+  }
+
+  .content {
+    @extend %content-style;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+
+    h2 {
+      font-size: 40px;
+      margin-bottom: 25px;
+    }
+
+    ul {
+      list-style: disc;
+      text-align: left;
+      display: inline-block;
+      margin-bottom: 20px;
+      padding-left: 20px;
+
+      li {
+        font-size: 17px;
+        margin-bottom: 10px;
+      }
+    }
+
+    p {
+      font-size: 17px;
+      line-height: 1.7;
+      margin-bottom: 20px;
+      padding: 0 10px;
+    }
+
+    >div {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .content {
+      h2 {
+        font-size: 32px;
+      }
+
+      ul {
+        padding-left: 15px;
+
+        li {
+          font-size: 16px;
+        }
+      }
+
+      p {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+.case-study-footer {
+  background-color: #f2f2f2;
+  padding: 40px 5px;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  border-top: 2px solid #ccc;
+
+  h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #333;
+  }
+
+  .social-media-icons {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+
+    a {
+      transition: transform 0.3s ease;
+
+      &:hover {
+        transform: scale(1.1);
+        opacity: 0.8;
+      }
+
+      img {
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
+}

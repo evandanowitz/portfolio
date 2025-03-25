@@ -1,0 +1,449 @@
+header {
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+header .nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10px;
+  background-color: #fff;
+  font-family: Roboto;
+  width: 100%;
+  height: 100px;
+  box-sizing: border-box;
+}
+header .nav-container .nav-portrait-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+header .nav-container .nav-portrait-container .nav-portrait {
+  width: 75px;
+  height: auto;
+  border-radius: 50px;
+}
+header .nav-container .nav-portrait-container .nav-name-text {
+  font-size: 24px;
+  font-weight: bold;
+  color: #000;
+}
+header .nav-container .nav-portrait-container .nav-portrait,
+header .nav-container .nav-portrait-container .nav-name-text:hover {
+  opacity: 0.8;
+}
+header .nav-container .nav-links-container {
+  display: flex;
+  gap: 25px;
+}
+header .nav-container .nav-links-container a {
+  color: #333;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 50px;
+  font-size: 18px;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+header .nav-container .nav-links-container a:hover {
+  background: linear-gradient(135deg, #e0f7fa, #ffe5d9);
+  color: #333;
+  border-radius: 50px;
+}
+
+.eighth-slide .background, .seventh-slide .background, .sixth-slide .background, .fifth-slide .background, .fourth-slide .background, .third-slide .background, .second-slide .background, .first-slide .background {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba(255, 255, 255, 0.9);
+  opacity: 0.25;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.first-slide,
+.second-slide,
+.third-slide,
+.fourth-slide,
+.fifth-slide,
+.sixth-slide,
+.seventh-slide,
+.eighth-slide {
+  position: relative;
+  overflow: hidden;
+  padding: 60px 30px;
+  font-family: "Roboto", sans-serif;
+  color: #333;
+}
+
+.eighth-slide .content, .seventh-slide .content, .sixth-slide .content, .fifth-slide .content, .fourth-slide .content, .third-slide .content, .second-slide .content, .first-slide .content {
+  position: relative;
+  z-index: 1;
+}
+
+body {
+  padding-top: 100px;
+}
+
+.first-slide .background {
+  background-image: url("../../img/bitebase-cs-images/marble-backdrop.jpg");
+}
+.first-slide .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.first-slide .content h2 {
+  font-size: 64px;
+  margin-bottom: 10px;
+  white-space: nowrap;
+}
+.first-slide .content h4 {
+  font-size: 24px;
+  margin-bottom: 0;
+}
+.first-slide .content h6 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.first-slide .content .laptop-images {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+.first-slide .content .laptop-images img {
+  flex: 1 1 280px;
+  max-width: 360px;
+  width: 100%;
+  height: auto;
+}
+.first-slide .content .links-paragraph {
+  font-size: 18px;
+  margin-top: 10px;
+}
+.first-slide .content .links-paragraph a {
+  color: #00575b;
+  font-weight: 500;
+  text-decoration: underline;
+}
+.first-slide .content .links-paragraph a:hover {
+  color: #003c40;
+}
+@media (max-width: 650px) {
+  .first-slide .content h2 {
+    white-space: normal;
+  }
+  .first-slide .content .laptop-images {
+    flex-direction: column;
+    align-items: center;
+  }
+  .first-slide .content .laptop-images img {
+    max-width: 90%;
+  }
+}
+
+.second-slide .background {
+  background-image: url("../../img/bitebase-cs-images/login-page-bg-img.jpg");
+}
+.second-slide .content {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+.second-slide .content h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+.second-slide .content p {
+  margin-bottom: 16px;
+  line-height: 1.6;
+}
+
+.third-slide .background {
+  background-image: url("../../img/bitebase-cs-images/various-grocery-products-concrete-surface.jpg");
+}
+.third-slide .content {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+.third-slide .content h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+.third-slide .content p {
+  margin-bottom: 16px;
+  line-height: 1.6;
+}
+.third-slide .content .credits-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 20px;
+}
+.third-slide .content .credits-row p {
+  white-space: nowrap;
+  margin: 0;
+}
+
+.fourth-slide .background {
+  background-image: url("../../img/bitebase-cs-images/top-close-up-view-spices-bowls-spices-citrus-fruits-garlic.jpg");
+}
+.fourth-slide .content {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+.fourth-slide .content h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+.fourth-slide .content p {
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+.fourth-slide .content .tools-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+}
+.fourth-slide .content .tools-image img {
+  width: 400px;
+  height: auto;
+  border-radius: 12px;
+  display: block;
+}
+
+.fifth-slide .background {
+  background-image: url("../../img/bitebase-cs-images/warm-textured-bg.jpg");
+}
+.fifth-slide .content {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+.fifth-slide .content h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+.fifth-slide .content h3 {
+  font-size: 28px;
+  margin-top: 30px;
+  margin-bottom: 16px;
+}
+.fifth-slide .content ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 20px;
+}
+.fifth-slide .content ul li {
+  margin-bottom: 8px;
+}
+.fifth-slide .content img {
+  display: block;
+  margin: 12px auto;
+  max-width: 100%;
+  height: auto;
+}
+.fifth-slide .content .chart-group {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+}
+.fifth-slide .content .chart-group img {
+  width: 200px;
+  height: auto;
+}
+@media (max-width: 600px) {
+  .fifth-slide .content h2 {
+    font-size: 34px;
+  }
+  .fifth-slide .content h3 {
+    font-size: 24px;
+  }
+  .fifth-slide .content .chart-group {
+    justify-content: center;
+  }
+  .fifth-slide .content .chart-group img {
+    width: 90%;
+    max-width: 250px;
+  }
+}
+
+.sixth-slide .background {
+  background-image: url("../../img/bitebase-cs-images/warm-bg.jpg");
+}
+.sixth-slide .content {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+.sixth-slide .content h2 {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+.sixth-slide .content h3 {
+  font-size: 26px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 6px;
+  display: inline-block;
+}
+.sixth-slide .content p {
+  font-size: 17px;
+  line-height: 1.7;
+  margin-bottom: 20px;
+  padding: 0 10px;
+}
+.sixth-slide .content div {
+  margin-bottom: 30px;
+}
+@media (max-width: 600px) {
+  .sixth-slide .content h2 {
+    font-size: 32px;
+  }
+  .sixth-slide .content h3 {
+    font-size: 22px;
+  }
+  .sixth-slide .content p {
+    font-size: 16px;
+  }
+}
+
+.seventh-slide .background {
+  background-image: url("../../img/bitebase-cs-images/textured-bg.jpg");
+}
+.seventh-slide .content {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+.seventh-slide .content h2 {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+.seventh-slide .content .page-views {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+.seventh-slide .content .page-views img {
+  width: 400px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+.seventh-slide .content .page-views img:hover {
+  transform: scale(1.03);
+}
+@media (max-width: 600px) {
+  .seventh-slide .content h2 {
+    font-size: 32px;
+  }
+  .seventh-slide .content .page-views img {
+    width: 100%;
+    max-width: 400px;
+  }
+}
+
+.eighth-slide .background {
+  background-image: url("../../img/bitebase-cs-images/various-grocery-products-concrete-surface.jpg");
+}
+.eighth-slide .content {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+.eighth-slide .content h2 {
+  font-size: 40px;
+  margin-bottom: 25px;
+}
+.eighth-slide .content ul {
+  list-style: disc;
+  text-align: left;
+  display: inline-block;
+  margin-bottom: 20px;
+  padding-left: 20px;
+}
+.eighth-slide .content ul li {
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+.eighth-slide .content p {
+  font-size: 17px;
+  line-height: 1.7;
+  margin-bottom: 20px;
+  padding: 0 10px;
+}
+.eighth-slide .content > div {
+  margin-bottom: 30px;
+}
+@media (max-width: 600px) {
+  .eighth-slide .content h2 {
+    font-size: 32px;
+  }
+  .eighth-slide .content ul {
+    padding-left: 15px;
+  }
+  .eighth-slide .content ul li {
+    font-size: 16px;
+  }
+  .eighth-slide .content p {
+    font-size: 16px;
+  }
+}
+
+.case-study-footer {
+  background-color: #f2f2f2;
+  padding: 40px 5px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  border-top: 2px solid #ccc;
+}
+.case-study-footer h2 {
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: #333;
+}
+.case-study-footer .social-media-icons {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+.case-study-footer .social-media-icons a {
+  transition: transform 0.3s ease;
+}
+.case-study-footer .social-media-icons a:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+.case-study-footer .social-media-icons a img {
+  width: 40px;
+  height: 40px;
+}
+
+/*# sourceMappingURL=styles.css.map */
